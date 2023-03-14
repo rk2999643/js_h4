@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Q.1 Find the Product.
+    </h3>
+    <pre>
+        
+const Find_Prod = (array, N) => 
+{
+ let ans = 1;
+ for(let i=0; N>i ; i++){
+   ans=ans*array[i];
+ }
+ return ans;
+};
+ 
+
+    </pre>
+    <h3>Q.2 Find the sum.</h3>
+    <pre>
+        
+const Find_Sum = (array, N) => 
+{
+  let ans = 0;
+ for(let i=0; N>i; i++){
+   ans=ans+array[i];
+ }
+ return ans;
+
+};
+ 
+
+    </pre>
+    <h3>Q.3 Count Occurrences</h3>
+    <pre>
+        
+const findCount = (N, K, Arr) => 
+{
+  let ans = 0;
+  for(let i=0; >N; i++){
+    if(Arr[i]===K){
+      ans++;
+    }
+
+  }
+  return ans;
+
+};
+ 
+
+    </pre>
+    <h3>Q.4 Even Odd    </h3>
+    <pre>
+        
+const findEvenOdd = (N, Arr) => 
+{
+  let even=0; odd=0;
+  for(let i=0; N>i; i++){
+    if(Arr[i]%2===0){
+      even=even+Arr[i];
+      
+    }
+    else{
+      odd=odd+Arr[i];
+    }
+  }
+  let ans = [even,odd];
+  return ans;
+};
+ 
+
+    </pre>
+    <h3>Q.5 Find whether the number is present or not
+    </h3>
+    <pre>
+        
+const Find_Num = (array,N,M) => 
+{
+  for(i=0;N>i;i++){
+    if(M===array[i]){
+      return "YES";
+    }
+  }
+  return "NO";
+};
+ 
+
+    </pre>
+    <h3>Q.6 Higher Age
+    </h3>
+    <pre>
+        
+const highAge = (N, Arr) => 
+{   let ans=[];
+   for(let i=0; i<N; i++){
+     if(Arr[i]>=18){
+       ans.push(Arr[i]);
+     }
+  }
+   return ans;
+  };
+ 
+
+    </pre>
+    <h3>Q.7 Increment the Array Elements
+    </h3>
+    <pre>
+        
+const Inc_Arr = (array,N) => 
+{ 
+  for(let i=0; N>i; i++){
+     ++array[i];
+     
+  }
+ console.log(...array);
+
+};
+ 
+
+    </pre>
+    <h3>Q.8 Pass or Fail
+    </h3>
+    <pre>
+        
+const isAllPass = (N, Arr) => 
+{  let j=0;
+   for(let i=0; N>i; i++){
+     if(Arr[i]<32)
+       j++;
+      
+    }
+    if(j>0)
+      return "NO";
+    else
+      return "YES";
+    
+};
+ 
+
+    </pre>
+    <h3>Q.9 Unique Color Shirt
+    </h3>
+    <pre>
+      
+function Unique_Shirts (arr,N) {
+  let a=[];ans=0;
+  for(let i=0; i<=1000;i++){
+    a[i]=0;
+  }
+  for(let j=0;N>j; j++ ){
+   a[arr[j]]++; 
+  }
+  for(let k=0; 1001>k;k++){
+    if(a[k]===1){
+      ans++;
+    }
+  }
+  return ans;
+ 
+}
+
+
+    </pre>
+    <h3>Q.10 Min and Max
+    </h3>
+    <pre>
+       
+ function arrayMin(arr) {
+  let min = arr[0];
+  for(i=0; arr.length>i;i++){
+    if(min>arr[i]){
+    min = arr[i];
+  }
+  }
+ return min;
+}
+
+function arrayMax(arr) {
+ let max = arr[0];
+   for(i=0; arr.length>i;i++){
+     if(arr[i]>max){
+     max= arr[i];
+     }
+  }
+return max;
+
+}
+
+
+    </pre>
+    <h3>Q.11 Birthday Game
+    </h3>
+    <pre>
+         
+function Birthday_Game(arr,D ,M) {
+  let count=0;
+  for(i=0;arr.length-M+1>i;i++){
+    let sum=0;
+    for(let j=i;(M+i)>i;j++){
+      sum+=arr[j];
+    }
+    if(sum===D){
+      count++;
+    }
+  }
+  return count;
+ 
+ }
+ 
+ 
+    </pre>
+</body>
+</html>
